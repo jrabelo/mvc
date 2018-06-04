@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Descomentar quando for colocar em produção(prd)
+#RewriteRule ^(.*)$ /mvc/index.php?q=$1 [QSA,L]
+
+# Comentar quando for colocar em produção(prd)
+RewriteRule ^(.*)$ /mvc/index.php/$1 [L]

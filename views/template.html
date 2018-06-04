@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="icon" type="image/ico" href="<?php echo URL; ?>/assets/img/favicon.ico" />
+    <!-- jQuery 3.3.1 -->
+    <script src="<?php echo URL; ?>/assets/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap 4.1.0 -->
+    <link rel="stylesheet" href="<?php echo URL; ?>/assets/css/bootstrap.min.css">
+    <!-- datatable -->
+    <link rel="stylesheet" type="text/css" href="<?php echo URL; ?>/assets/css/dataTables.bootstrap.min.css" />
+    <!-- Template -->
+    <link rel="stylesheet" type="text/css" href="<?php echo URL; ?>/assets/css/template.css">
+  </head>
+  <body>
+    <div class="topo">
+      <div class="topo">
+      
+      </div>
+      <div class="banner">
+      
+      </div>
+    </div>
+    <div class="menu">
+      
+    </div>
+    <div class="container">
+        <?php view::loadViewInTemplate($viewName, $viewData); ?>
+    </div>
+    <div class="rodape">
+    
+    </div>
+
+    <!-- REQUIRED JS SCRIPTS -->
+    
+    <!-- Bootstrap 4.1.0 -->
+    <script src="<?php echo URL; ?>/assets/js/bootstrap.bundle.min.js"></script>
+    <!-- JQuery Mask -->
+    <script src="<?php echo URL; ?>/assets/js/jquery.mask.js"></script>
+    <!-- Mascara -->
+    <script src="<?php echo URL; ?>/assets/js/mask.js"></script>
+    <!-- datatable -->
+    <script type="text/javascript" src="<?php echo URL; ?>/assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="<?php echo URL; ?>/assets/js/dataTables.bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#table').DataTable({
+                "aaSorting": [],
+                "bJQueryUI": true,
+                "searching": false,
+                "bLengthChange": false,
+                "bPaginate": false,
+                "bInfo": false,
+                "oLanguage": {
+                    "sProcessing":   "Processando...",
+                    "sLengthMenu":   "Mostrar _MENU_ registros",
+                    "sZeroRecords":  "Não foram encontrados resultados",
+                    "sInfo":         "Mostrando de _START_ até _END_ de _TOTAL_ registros",
+                    "sInfoEmpty":    "Mostrando de 0 até 0 de 0 registros",
+                    "sInfoFiltered": "",
+                    "sInfoPostFix":  "",
+                    "sSearch":       "Buscar:",
+                    "sUrl":          "",
+                    "oPaginate": {
+                        "sFirst":    "Primeiro",
+                        "sPrevious": "Anterior",
+                        "sNext":     "Seguinte",
+                        "sLast":     "Último"
+                    }
+                }
+            });
+        });
+    </script> 
+  </body>
+</html>

@@ -1,0 +1,47 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  background-color: #DDD;
+}
+.form-signin {
+  position: relative;
+  border-radius: 10px;
+  background: rgba(94,96,90,0.3);
+  width: 100%;
+  max-width: 330px;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+}
+.form-signin input[type="text"] {
+  margin-bottom: 10px;
+  border-radius: 0.2rem; 
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-radius: 0.2rem;
+}
+#body {
+  background: url(../img/fundo_login.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
